@@ -1,4 +1,4 @@
-# [나 혼자 쓸려고 만드는 영단어](https://jeongdongha.me/toeic-words/)
+# [나 혼자 쓰려고 만드는 영단어 테스트 페이지](https://jeongdongha.me/toeic-words/)
 
 # CONTENTS
 
