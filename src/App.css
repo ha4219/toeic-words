@@ -1,5 +1,36 @@
 .App {
   text-align: center;
+  background-color: green;
+  color: white;
+  font-size: xx-large;
+  background-color: green;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.continue {
+  border: 1rem solid white;
+  padding: 10rem;
+}
+
+.full-div {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.half-div {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  background-color: green;
+  border: 0.5rem solid white;
+  color: white;
+  font-size: xx-large;
 }
 
 .App-logo {
