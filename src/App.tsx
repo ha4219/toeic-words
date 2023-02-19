@@ -8,9 +8,10 @@ function App() {
   return (
     <FirebaseProvider>
       <Layout>
-        <Routes>
-          <Route index path="" element={<KoToEn />} />
-        </Routes>
+        {/* <Routes>
+          <Route index element={<KoToEn />} />
+        </Routes> */}
+        <KoToEn />
       </Layout>
     </FirebaseProvider>
   );

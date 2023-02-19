@@ -9,7 +9,7 @@ function App() {
   const allData = loadData.data;
 
   const [index, setIndex] = React.useState(0);
-  const [page, setPage] = React.useState(0);
+  const [page, setPage] = React.useState(50);
   const [isWrong, setIsWrong] = React.useState(false);
 
   const cur = page * DEFAULT + index;
