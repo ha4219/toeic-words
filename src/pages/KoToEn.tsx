@@ -9,7 +9,7 @@ function App() {
   const allData = loadData.data;
 
   const [index, setIndex] = React.useState(0);
-  const [page, setPage] = React.useState(50);
+  const [page, setPage] = React.useState(0);
   const [isWrong, setIsWrong] = React.useState(false);
 
   const cur = page * DEFAULT + index;
@@ -34,6 +34,15 @@ function App() {
     }
   };
 
+  const handlePage = (e: React.SyntheticEvent): void => {
+    e.preventDefault();
+    const target = e.target as typeof e.target & {
+      page: { value: number };
+    };
+    setPage(target.page.value);
+    setIndex(0);
+  };
+
   const handleRefresh = (e: React.MouseEvent<HTMLButtonElement>): void => {
     e.preventDefault();
     setIndex(0);
@@ -46,6 +55,10 @@ function App() {
 
   return (
     <div className="App">
+      <form className="set-page" onSubmit={handlePage}>
+        <label>page: </label>
+        <input type="number" name="page" />
+      </form>
       {isWrong ? (
         <div className="wrong">
           <div>틀림</div>
